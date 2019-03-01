@@ -35,13 +35,13 @@ public class RulesOf6005 {
      *         policy for the current semester.
      */
     public static boolean mayUseCodeInAssignment(boolean writtenByYourself,
-            boolean availableToOthers, boolean writtenAsCourseWork,
+            boolean rittenByYourself, boolean writtenAsCourseWork,
             boolean citingYourSource, boolean implementationRequired) {
         
-        // TODO: Fill in this method, then remove the exception
-    	return true;
-        
-//        throw new RuntimeException("implement me!");
+        if(writtenByYourself==true && rittenByYourself==false && writtenAsCourseWork==true && citingYourSource==true && implementationRequired==true)
+        	return true;
+        else 
+        	return false;
     }
     
     /**
